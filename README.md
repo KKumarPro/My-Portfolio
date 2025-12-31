@@ -12,7 +12,7 @@
 </h4>
 
 <p align="center">
-  <a href="https://https://my-portfolio-nm2o.vercel.app/" target="_blank">Live Demo</a> •
+  <a href="https://kkumar.vercel.app" target="_blank">Live Demo</a> •
   <a href="https://github.com/KKumarPro" target="_blank">GitHub</a> •
   <a href="https://www.linkedin.com/in/karan-kumar-305925282/" target="_blank">LinkedIn</a>
 </p>
