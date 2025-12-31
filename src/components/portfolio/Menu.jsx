@@ -7,6 +7,7 @@ const Menu = [
   {
     id: 1,
     image: Work1,
+    featured: true,
     title: "Glimmer — Cosmic Social Platform",
     category: ["Full Stack", "React", "WebSockets"],
     repositoryUrl: "https://github.com/KKumarPro/GlimmerNotes",
