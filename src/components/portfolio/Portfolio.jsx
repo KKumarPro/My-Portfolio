@@ -22,7 +22,8 @@ const Portfolio = () => {
       setItems(Menu);
     } else {
       const updatedItems = Menu.filter((item) =>
-        item.category.includes(filter)
+        // FIX: Safety check to ensure category is an array before calling includes
+        Array.isArray(item.category) && item.category.includes(filter)
       );
       setItems(updatedItems);
     }
@@ -52,17 +53,24 @@ const Portfolio = () => {
       </div>
 
       <div className="portfolio__container grid">
-        {items.map(
-          ({ id, image, title, category, url, repositoryUrl, description }) => (
+        {items.map((item) => {
+          // FIX: Added 'featured' to destructuring for consistency
+          const { id, image, title, category, url, repositoryUrl, description, featured } = item;
+          
+          // FIX: Added 'return' keyword so the JSX is actually rendered
+          return (
             <motion.div
               layout
               key={id}
-              className="portfolio__card"
+              // FIX: Used destructured 'featured' variable
+              className={`portfolio__card ${featured ? "portfolio__featured" : ""}`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
             >
               <div className="portfolio__thumbnail">
+                {featured && <span className="portfolio__badge">Featured</span>}
+
                 <img
                   src={image}
                   alt={title}
@@ -72,7 +80,8 @@ const Portfolio = () => {
               </div>
 
               <span className="portfolio__category">
-                {category.join(" • ")}
+                {/* FIX: Safety check for join */}
+                {Array.isArray(category) ? category.join(" • ") : category}
               </span>
 
               <h3 className="portfolio__title">{title}</h3>
@@ -86,7 +95,7 @@ const Portfolio = () => {
                   <a
                     href={url}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer" // FIX: Added noopener for security
                     className="portfolio__button"
                     aria-label="Live project"
                   >
@@ -94,19 +103,22 @@ const Portfolio = () => {
                   </a>
                 )}
 
-                <a
-                  href={repositoryUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="portfolio__github-button"
-                  aria-label="GitHub repository"
-                >
-                  <RiGithubLine />
-                </a>
+                {/* FIX: Conditional rendering to prevent empty/broken links */}
+                {repositoryUrl && (
+                  <a
+                    href={repositoryUrl}
+                    target="_blank"
+                    rel="noopener noreferrer" // FIX: Added noopener for security
+                    className="portfolio__github-button"
+                    aria-label="GitHub repository"
+                  >
+                    <RiGithubLine />
+                  </a>
+                )}
               </div>
             </motion.div>
-          )
-        )}
+          );
+        })}
       </div>
     </section>
   );

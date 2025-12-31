@@ -7,13 +7,13 @@ const Menu = [
   {
     id: 1,
     image: Work1,
-    featured: true,
     title: "Glimmer — Cosmic Social Platform",
     category: ["Full Stack", "React", "WebSockets"],
     repositoryUrl: "https://github.com/KKumarPro/GlimmerNotes",
     description:
       "A full-stack social platform featuring real-time chat, ephemeral messaging, 3D visualizations with Three.js, and AI-powered interactions using Google Gemini API.",
-  },
+    featured: true,
+   },
   {
     id: 2,
     image: Work2,
