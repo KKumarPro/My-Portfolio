@@ -63,7 +63,6 @@ const Portfolio = () => {
               transition={{ duration: 0.3 }}
             > 
               <div className="portfolio__thumbnail">
-                <div className="portfolio__thumbnail">
                   {featured && (
                     <span className="portfolio__badge">Featured</span>
                   )}
@@ -75,13 +74,6 @@ const Portfolio = () => {
                   />
                   <div className="portfolio__mask"></div>
                 </div>
-                <img
-                  src={image}
-                  alt={title}
-                  className="portfolio__img"
-                />
-                <div className="portfolio__mask"></div>
-              </div>
 
               <span className="portfolio__category">
                 {category.join(" • ")}
