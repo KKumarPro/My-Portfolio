@@ -53,27 +53,23 @@ const Portfolio = () => {
 
       <div className="portfolio__container grid">
         {items.map(
-          ({ id, image, title, category, url, repositoryUrl, description, featured }) => (
+          ({ id, image, title, category, url, repositoryUrl, description }) => (
             <motion.div
               layout
               key={id}
-              className={`portfolio__card ${featured ? "portfolio__featured" : ""}`}
+              className="portfolio__card"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
-            > 
+            >
               <div className="portfolio__thumbnail">
-                  {featured && (
-                    <span className="portfolio__badge">Featured</span>
-                  )}
-
-                  <img
-                    src={image}
-                    alt={title}
-                    className="portfolio__img"
-                  />
-                  <div className="portfolio__mask"></div>
-                </div>
+                <img
+                  src={image}
+                  alt={title}
+                  className="portfolio__img"
+                />
+                <div className="portfolio__mask"></div>
+              </div>
 
               <span className="portfolio__category">
                 {category.join(" • ")}
