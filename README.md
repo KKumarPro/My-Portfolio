@@ -1,67 +1,68 @@
 <h1 align="center">
   <br>
-  <a href="http://gregsithole.com">
-  <img src="./src/assets/light-logo.svg" alt="GregSithole" width="200"></a>
+  <img src="./src/assets/1logo.png" alt="Karan Kumar Logo" width="200">
   <br>
-  Greg Sithole's Personal Website
+  Karan Kumar — Developer Portfolio
   <br>
 </h1>
 
-<h4 align="center">A simple personal website about <a href="http://gregsithole.com" target="_blank">Greg Sithole</a>.</h4>
+<h4 align="center">
+  Personal portfolio website showcasing my projects, skills, and experience as a
+  Full-Stack Web Developer.
+</h4>
 
-<br>
+<p align="center">
+  <a href="https://your-portfolio-link.vercel.app" target="_blank">Live Demo</a> •
+  <a href="https://github.com/KKumarPro" target="_blank">GitHub</a> •
+  <a href="https://www.linkedin.com/in/karan-kumar-305925282/" target="_blank">LinkedIn</a>
+</p>
 
-![screenshot](https://github.com/GregSithole/gregsithole-react-portfolio/raw/master/src/assets/screenshot.png)
+<br />
 
-## How To Use
+## 📌 About
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/). From your command line:
+This is my personal developer portfolio built to present my **projects, technical skills, and professional experience**.  
+It highlights full-stack work including real-time systems, AI-assisted features, and modern frontend development.
 
-```bash
-# Clone this repository
-$ git clone https://github.com/GregSithole/gregsithole-react-portfolio
-
-# Go into the repository
-$ cd gregsithole-react-portfolio
-
-# Install dependencies
-$ yarn install
-
-# Run the app
-$ yarn start
-```
-
-<!-- ## Credits
-
-This website uses the following open source packages:
-
-- [Node.js](https://nodejs.org/)
-
-## Related
-
-[markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify
-
-## Support -->
-
-<!-- <a href="https://www.buymeacoffee.com/5Zn8Xh3l9" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a> -->
-
-<!-- <p>Or</p>
-
-<a href="https://www.patreon.com/amitmerchant">
-	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a> -->
-
-<!-- ## You may also like...
-
-- [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
-- [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
-
-## License
-
-MIT
+The portfolio is designed to be **clean, honest, and recruiter-friendly**, with a focus on real work rather than templates or exaggerated claims.
 
 ---
 
-> [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
-> GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
-> Twitter [@amit_merchant](https://twitter.com/amit_merchant) -->
+## 🛠 Tech Stack
+
+- **Frontend:** React, JavaScript (ES6+), HTML5, CSS3
+- **Styling & UI:** Tailwind CSS, Framer Motion
+- **Backend / APIs:** Node.js (project-based)
+- **Other Tools:** EmailJS, Git, GitHub
+- **Deployment:** Vercel
+
+---
+
+## 🚀 Features
+
+- Responsive, mobile-friendly design
+- Project showcase with GitHub links
+- Experience & skills sections
+- Contact form with EmailJS integration
+- Light / Dark theme toggle
+- Clean navigation and smooth animations
+
+---
+
+## ▶️ Run Locally
+
+To clone and run this project locally, make sure you have **Git** and **Node.js** installed.
+
+```bash
+# Clone the repository
+git clone https://github.com/KKumarPro/My-Portfolio.git
+
+# Navigate into the project directory
+cd My-Portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+```
