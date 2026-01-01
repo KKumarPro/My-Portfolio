@@ -40,6 +40,7 @@ const About = () => {
                 <strong>Backend:</strong> Node.js, Express.js, REST APIs,
                 WebSockets, Spring Boot (basic)
               </li>
+              <br></br>
               <li>
                 <strong>Databases:</strong> PostgreSQL, MongoDB
               </li>
