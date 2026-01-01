@@ -36,16 +36,13 @@ const About = () => {
                 <strong>Frontend:</strong> React, JavaScript (ES6+), TypeScript,
                 HTML5, Tailwind CSS
               </li>
-              <br></br>
               <li>
                 <strong>Backend:</strong> Node.js, Express.js, REST APIs,
                 WebSockets, Spring Boot (basic)
               </li>
-              <br></br>
               <li>
                 <strong>Databases:</strong> PostgreSQL, MongoDB
               </li>
-              <br></br>
               <li>
                 <strong>AI & Web3:</strong> Google Gemini API, Prompt Engineering,
                 Ethereum Smart Contracts
