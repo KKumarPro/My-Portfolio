@@ -41,7 +41,7 @@ const About = () => {
                 WebSockets, Spring Boot (basic)
               </li>
               <br></br>
-              <li>
+              <li><br></br>
                 <strong>Databases:</strong> PostgreSQL, MongoDB
               </li>
               <li>
