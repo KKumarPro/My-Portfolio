@@ -41,7 +41,9 @@ const About = () => {
                 WebSockets, Spring Boot (basic)
               </li>
               <br></br>
-              <li><br></br>
+            </ul>
+            <ul className="about__list">
+              <li>
                 <strong>Databases:</strong> PostgreSQL, MongoDB
               </li>
               <li>
@@ -49,7 +51,6 @@ const About = () => {
                 Ethereum Smart Contracts
               </li>
             </ul>
-
             <a
               href={Resume}
               target="_blank"
