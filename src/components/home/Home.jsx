@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import Me from '../../assets/karan.png'; // real photo
+import Me from '../../assets/karan.png';
 import HeaderSocials from './HeaderSocials';
 //import ScrollDown from './ScrollDown';
 import Shapes from './Shapes';
