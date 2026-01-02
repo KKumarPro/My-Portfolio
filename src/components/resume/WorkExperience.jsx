@@ -58,19 +58,20 @@ const WorkExperience = [
         ],
       },
       {
-        title: "Peer Mentor",
-        information: [
-          "Guided peers in understanding core programming concepts and academic coursework.",
-          "Helped juniors with project planning, debugging, and effective learning strategies."
-        ],
-      },
-      {
         title: "Design & Media Contributor",
         information: [
           "Designed banners, posters, and event logos for university technical and cultural events.",
           "Collaborated with organizing committees to align visual designs with event themes and branding."
         ],
       },
+      {
+        title: "Peer Mentor",
+        information: [
+          "Guided peers in understanding core programming concepts and academic coursework.",
+          "Helped juniors with project planning, debugging, and effective learning strategies."
+        ],
+      },
+      
     ],
   },
 ];
