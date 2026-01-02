@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import Image from '../../assets/1karan.png'; // same real photo as Hero
+import Image from '../../assets/1karan.png';
 import Resume from '../../assets/Karan_Kumar_Resume.pdf';
 import AboutBox from './AboutBox';
 
