@@ -46,33 +46,31 @@ const WorkExperience = [
   },
   {
     id: 5,
-    title: "Design & Media Contributor",
     company: "Amity University Jharkhand",
     yearsActive: "2023 – Present",
-    information: [
-      "Designed banners, posters, and event logos for university technical and cultural events.",
-      "Collaborated with organizing committees to align visual designs with event themes and branding."
-    ],
-  },
-  {
-    id: 6,
-    title: "Peer Mentor",
-    company: "Amity University Jharkhand",
-    yearsActive: "2023 – Present",
-    information: [
-      "Guided peers in understanding core programming concepts and academic coursework.",
-      "Helped juniors with project planning, debugging, and effective learning strategies."
-    ],
-  },
-  {
-    id: 7,
-    title: "B.Tech Student – Computer Science & Engineering",
-    company: "Amity University Jharkhand",
-    yearsActive: "2023 – Present",
-    information: [
-      "Pursuing Bachelor of Technology in Computer Science and Engineering.",
-      "Building full-stack projects using React, Node.js, PostgreSQL, and WebSockets alongside academic coursework.",
-      "Actively strengthening data structures, backend fundamentals, and system design skills."
+    roles: [
+      {
+        title: "B.Tech Student – Computer Science & Engineering",
+        information: [
+          "Pursuing Bachelor of Technology in Computer Science and Engineering.",
+          "Building full-stack projects using React, Node.js, PostgreSQL, and WebSockets alongside academic coursework.",
+          "Actively strengthening data structures, backend fundamentals, and system design skills."
+        ],
+      },
+      {
+        title: "Peer Mentor",
+        information: [
+          "Guided peers in understanding core programming concepts and academic coursework.",
+          "Helped juniors with project planning, debugging, and effective learning strategies."
+        ],
+      },
+      {
+        title: "Design & Media Contributor",
+        information: [
+          "Designed banners, posters, and event logos for university technical and cultural events.",
+          "Collaborated with organizing committees to align visual designs with event themes and branding."
+        ],
+      },
     ],
   },
 ];
