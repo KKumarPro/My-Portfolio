@@ -37,8 +37,6 @@ const Resume = () => {
                     return (
                         <TabPanel className="tab__panel" key={`panel-${id}`}>
                         <p className="tab__panel-subtitle">{yearsActive}</p>
-
-                        {/* CASE 1: Grouped roles (Amity University) */}
                         {roles ? (
                             roles.map((role, rIndex) => (
                             <div
@@ -58,7 +56,6 @@ const Resume = () => {
                             </div>
                             ))
                         ) : (
-                            /* CASE 2: Normal experience */
                             <>
                             <h2 className="tab__panel-title">
                                 {title} @ {company}
