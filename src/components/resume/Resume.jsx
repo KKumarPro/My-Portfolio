@@ -32,21 +32,45 @@ const Resume = () => {
                     </TabList>
 
                     {WorkExperience.map((experience) => {
-                        const { id, company, yearsActive, title, information } = experience;
-                        return (
-                            <TabPanel className="tab__panel" key={`panel-${id}`}>
+                    const { id, company, yearsActive, title, information, roles } = experience;
+
+                    return (
+                        <TabPanel className="tab__panel" key={`panel-${id}`}>
+                        <p className="tab__panel-subtitle">{yearsActive}</p>
+
+                        {/* CASE 1: Grouped roles (Amity University) */}
+                        {roles ? (
+                            roles.map((role, rIndex) => (
+                            <div key={rIndex} className="resume__role">
                                 <h2 className="tab__panel-title">
-                                    {title} @ {company}
+                                {role.title} @ {company}
                                 </h2>
-                                <p className="tab__panel-subtitle">{yearsActive}</p>
+
                                 <ul className="tab__panel-list">
-                                    {information.map((info, index) => {
-                                        return <li key={`info-${index}`}>{info}</li>;
-                                    })}
+                                {role.information.map((info, i) => (
+                                    <li key={i}>{info}</li>
+                                ))}
                                 </ul>
-                            </TabPanel>
-                        );
+                            </div>
+                            ))
+                        ) : (
+                            /* CASE 2: Normal experience */
+                            <>
+                            <h2 className="tab__panel-title">
+                                {title} @ {company}
+                            </h2>
+
+                            <ul className="tab__panel-list">
+                                {information.map((info, index) => (
+                                <li key={index}>{info}</li>
+                                ))}
+                            </ul>
+                            </>
+                        )}
+                        </TabPanel>
+                    );
                     })}
+
                 </Tabs>
             </div>
         </section>
