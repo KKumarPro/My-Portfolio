@@ -50,7 +50,7 @@ const WorkExperience = [
     yearsActive: "2023 – Present",
     roles: [
       {
-        title: "B.Tech Student – Computer Science & Engineering",
+        title: "B.Tech in Computer Science & Engineering",
         information: [
           "Pursuing Bachelor of Technology in Computer Science and Engineering.",
           "Building full-stack projects using React, Node.js, PostgreSQL, and WebSockets alongside academic coursework.",
@@ -58,20 +58,14 @@ const WorkExperience = [
         ],
       },
       {
-        title: "Design & Media Contributor",
+        title: "Peer Mentor & Design Contributor",
         information: [
+          "Guided peers in understanding core programming concepts and academic coursework.",
+          "Helped juniors with project planning, debugging, and effective learning strategies.",
           "Designed banners, posters, and event logos for university technical and cultural events.",
           "Collaborated with organizing committees to align visual designs with event themes and branding."
         ],
       },
-      {
-        title: "Peer Mentor",
-        information: [
-          "Guided peers in understanding core programming concepts and academic coursework.",
-          "Helped juniors with project planning, debugging, and effective learning strategies."
-        ],
-      },
-      
     ],
   },
 ];

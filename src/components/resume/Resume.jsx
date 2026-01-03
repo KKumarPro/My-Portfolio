@@ -41,7 +41,11 @@ const Resume = () => {
                         {/* CASE 1: Grouped roles (Amity University) */}
                         {roles ? (
                             roles.map((role, rIndex) => (
-                            <div key={rIndex} className="resume__role">
+                            <div
+                                key={rIndex}
+                                className="resume__role"
+                                style={{ marginTop: rIndex !== 0 ? "1.5rem" : "0" }}
+                            >
                                 <h2 className="tab__panel-title">
                                 {role.title} @ {company}
                                 </h2>
