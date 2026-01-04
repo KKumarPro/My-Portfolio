@@ -22,7 +22,6 @@ const Portfolio = () => {
       setItems(Menu);
     } else {
       const updatedItems = Menu.filter((item) =>
-        // FIX: Safety check to ensure category is an array before calling includes
         Array.isArray(item.category) && item.category.includes(filter)
       );
       setItems(updatedItems);
