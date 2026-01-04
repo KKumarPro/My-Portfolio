@@ -1,7 +1,6 @@
 import Work1 from "../../assets/Glimmer.png"; 
 import Work2 from "../../assets/reuseIT.png"; 
 import Work3 from "../../assets/train.png"; 
-//import Work4 from "../../assets/blog-1.svg";
 
 const Menu = [
   {
