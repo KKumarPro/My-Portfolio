@@ -53,15 +53,11 @@ const Portfolio = () => {
 
       <div className="portfolio__container grid">
         {items.map((item) => {
-          // FIX: Added 'featured' to destructuring for consistency
           const { id, image, title, category, url, repositoryUrl, description, featured } = item;
-          
-          // FIX: Added 'return' keyword so the JSX is actually rendered
           return (
             <motion.div
               layout
               key={id}
-              // FIX: Used destructured 'featured' variable
               className={`portfolio__card ${featured ? "portfolio__featured" : ""}`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -94,7 +90,7 @@ const Portfolio = () => {
                   <a
                     href={url}
                     target="_blank"
-                    rel="noopener noreferrer" // FIX: Added noopener for security
+                    rel="noopener noreferrer"
                     className="portfolio__button"
                     aria-label="Live project"
                   >
