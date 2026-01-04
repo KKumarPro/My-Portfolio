@@ -103,7 +103,7 @@ const Portfolio = () => {
                   <a
                     href={repositoryUrl}
                     target="_blank"
-                    rel="noopener noreferrer" // FIX: Added noopener for security
+                    rel="noopener noreferrer"
                     className="portfolio__github-button"
                     aria-label="GitHub repository"
                   >
