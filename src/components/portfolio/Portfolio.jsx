@@ -75,7 +75,7 @@ const Portfolio = () => {
               </div>
 
               <span className="portfolio__category">
-                {/* FIX: Safety check for join */}
+                
                 {Array.isArray(category) ? category.join(" • ") : category}
               </span>
 
