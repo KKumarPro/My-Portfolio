@@ -97,8 +97,6 @@ const Portfolio = () => {
                     <RiLink />
                   </a>
                 )}
-
-                {/* FIX: Conditional rendering to prevent empty/broken links */}
                 {repositoryUrl && (
                   <a
                     href={repositoryUrl}
