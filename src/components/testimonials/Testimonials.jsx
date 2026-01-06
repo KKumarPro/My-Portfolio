@@ -14,7 +14,7 @@ const Testimonials = () => {
     {
       id: 1,
       image: Image4,
-      title: "Internship Feedback",
+      title: "Internship Feedback",//By Mr. Mohit Jain
       subtitle: "Technical Mentor (CCL)",
       comment:
         "Karan demonstrated strong problem-solving skills and adaptability while working on full-stack features. He understood requirements quickly and collaborated effectively with the team.",
