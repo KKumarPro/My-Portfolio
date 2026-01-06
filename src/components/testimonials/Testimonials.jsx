@@ -30,7 +30,7 @@ const Testimonials = () => {
     {
       id: 3,
       image: Image4,
-      title: "Freelance Collaboration",
+      title: "Freelance Collaboration", //From Upwork Clients
       subtitle: "Client Feedback",
       comment:
         "Clear communication, timely delivery, and iterative improvements based on feedback made working with Karan smooth and reliable.",
