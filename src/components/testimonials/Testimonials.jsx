@@ -22,7 +22,7 @@ const Testimonials = () => {
     {
       id: 2,
       image: Image3,
-      title: "Peer Collaboration",
+      title: "Peer Collaboration", //By Team Members
       subtitle: "University Project Team",
       comment:
         "Karan was proactive in helping teammates, explaining concepts clearly, and supporting debugging efforts during development.",
