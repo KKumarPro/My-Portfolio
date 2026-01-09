@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  /*=============== Colors ===============*/
   --first-color: hsl(353, 100%, 65%);
   --title-color: hsl(244, 100%, 26%);
   --text-color: hsl(244, 16%, 43%);
