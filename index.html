@@ -1,0 +1,1115 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description" content="Karan Kumar — Full-Stack Web Developer" />
+    <title>Karan Kumar</title>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Geist+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ░░ PRELOADER ░░ -->
+    <div id="preloader">
+      <div class="pre-inner">
+        <div class="pre-counter">
+          <span id="pre-num">0</span><span class="pre-pct">%</span>
+        </div>
+        <div class="pre-bar-track">
+          <div class="pre-bar" id="pre-bar"></div>
+        </div>
+        <div class="pre-label">Loading portfolio</div>
+      </div>
+    </div>
+
+    <!-- ░░ CURSOR ░░ -->
+    <div id="c-dot"></div>
+    <div id="c-ring"></div>
+
+    <!-- ░░ SCROLL PROGRESS ░░ -->
+    <div id="sp"></div>
+
+    <!-- ░░ NAV ░░ -->
+    <header id="header">
+      <nav id="nav">
+        <a href="#home" class="nl logo-mark">
+          <span class="lm-k">K</span><span class="lm-k2">K</span
+          ><span class="lm-dot">.</span>
+        </a>
+        <ul class="nav-center">
+          <li><a href="#about" class="nl">About</a></li>
+          <li><a href="#work" class="nl">Work</a></li>
+          <li><a href="#services" class="nl">Services</a></li>
+          <li><a href="#resume" class="nl">Experience</a></li>
+          <li><a href="#certifications" class="nl">Certs</a></li>
+          <li><a href="#contact" class="nl">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <button id="theme-btn" class="icon-btn" aria-label="Toggle theme">
+            <i class="ri-sun-line" id="theme-icon"></i>
+          </button>
+          <a
+            href="assets/Karan_Kumar_Resume.pdf"
+            target="_blank"
+            class="nav-resume"
+          >
+            Résumé <i class="ri-arrow-right-up-line"></i>
+          </a>
+          <button class="burger" id="burger" aria-label="Menu">
+            <span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ░░ MOBILE MENU ░░ -->
+    <div class="mob-menu" id="mob-menu">
+      <div class="mob-links">
+        <a href="#about" class="mob-link">About</a>
+        <a href="#work" class="mob-link">Work</a>
+        <a href="#services" class="mob-link">Services</a>
+        <a href="#resume" class="mob-link">Experience</a>
+        <a href="#certifications" class="mob-link">Certifications</a>
+        <a href="#contact" class="mob-link">Contact</a>
+      </div>
+      <div class="mob-foot">
+        <a href="https://github.com/KKumarPro" target="_blank" rel="noreferrer"
+          ><i class="ri-github-line"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/karan-kumar-305925282/"
+          target="_blank"
+          rel="noreferrer"
+          ><i class="ri-linkedin-line"></i
+        ></a>
+      </div>
+    </div>
+
+    <main id="main">
+      <!-- ╔═══════════════════════════╗
+     ║         HERO             ║
+     ╚═══════════════════════════╝ -->
+      <section id="home" class="hero">
+        <!-- canvas-like bg orbs -->
+        <div class="hero-orbs" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+
+        <!-- grid overlay -->
+        <div class="hero-grid" aria-hidden="true"></div>
+
+        <div class="hero-wrap">
+          <div class="hero-content">
+            <!-- Status pill -->
+            <div class="status-pill" id="h-pill">
+              <span class="sp-dot"></span>
+              <span class="sp-text">Open to opportunities — 2025</span>
+            </div>
+
+            <!-- Main headline — each line clips and slides up -->
+            <div class="h-headline">
+              <div class="line-clip">
+                <div class="line-inner" id="hl1">Full-Stack</div>
+              </div>
+              <div class="line-clip">
+                <div class="line-inner" id="hl2"><em>Developer</em></div>
+              </div>
+            </div>
+
+            <!-- Sub line with role cycling -->
+            <div class="h-sub" id="h-sub">
+              <span class="hs-prefix">Crafting&nbsp;</span>
+              <div class="hs-words" id="hs-words">
+                <span class="hw active">production apps</span>
+                <span class="hw">real-time systems</span>
+                <span class="hw">AI-powered features</span>
+                <span class="hw">Web3 products</span>
+              </div>
+              <span class="hs-suffix">&nbsp;with precision.</span>
+            </div>
+
+            <!-- Desc -->
+            <p class="h-desc" id="h-desc">
+              I'm <strong>Karan Kumar</strong>, a full-stack engineer with
+              internship experience at
+              <strong>Central Coalfields Limited</strong>. I build with React,
+              Node.js, PostgreSQL and ship features that actually work in
+              production.
+            </p>
+
+            <!-- CTAs -->
+            <div class="h-ctas" id="h-ctas">
+              <a href="#work" class="cta-primary">
+                <span class="cta-label">View Projects</span>
+                <span class="cta-icon"
+                  ><i class="ri-arrow-right-up-line"></i
+                ></span>
+              </a>
+              <a href="#contact" class="cta-ghost">Get in touch</a>
+            </div>
+
+            <!-- Socials -->
+            <div class="h-socials" id="h-socials">
+              <a
+                href="https://github.com/KKumarPro"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+                class="soc-link"
+              >
+                <i class="ri-github-line"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/karan-kumar-305925282/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                class="soc-link"
+              >
+                <i class="ri-linkedin-line"></i>
+              </a>
+              <a
+                href="mailto:karankumar.dev@gmail.com"
+                aria-label="Email"
+                class="soc-link"
+              >
+                <i class="ri-mail-line"></i>
+              </a>
+              <div class="soc-div"></div>
+              <span class="soc-loc"
+                ><i class="ri-map-pin-line"></i> Jharkhand, India</span
+              >
+            </div>
+          </div>
+
+          <!-- Hero image side -->
+          <div class="hero-visual" id="hero-visual">
+            <div class="hv-frame">
+              <div class="hv-glow"></div>
+              <img
+                src="assets/karan.png"
+                alt="Karan Kumar"
+                class="hv-img"
+                id="hv-img"
+              />
+              <div class="hv-badge">
+                <span class="hv-b-dot"></span>
+                <span>Available now</span>
+              </div>
+            </div>
+            <!-- floating skill pills -->
+            <div class="fp fp-1" id="fp1">
+              <i class="ri-reactjs-line"></i><span>React</span>
+            </div>
+            <div class="fp fp-2" id="fp2">
+              <i class="ri-nodejs-line"></i><span>Node.js</span>
+            </div>
+            <div class="fp fp-3" id="fp3">
+              <i class="ri-database-2-line"></i><span>PostgreSQL</span>
+            </div>
+            <div class="fp fp-4" id="fp4">
+              <i class="ri-sparkling-line"></i><span>Gemini AI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-ind" id="scroll-ind">
+          <div class="si-track"><div class="si-thumb"></div></div>
+          <span>Scroll to explore</span>
+        </div>
+      </section>
+
+      <!-- ╔═══════════════════════════╗
+     ║    MARQUEE STRIP          ║
+     ╚═══════════════════════════╝ -->
+      <div class="mq-strip" aria-hidden="true">
+        <div class="mq-inner">
+          <span>React</span><span class="mq-sep">✦</span> <span>Node.js</span
+          ><span class="mq-sep">✦</span> <span>PostgreSQL</span
+          ><span class="mq-sep">✦</span> <span>WebSockets</span
+          ><span class="mq-sep">✦</span> <span>TypeScript</span
+          ><span class="mq-sep">✦</span> <span>MongoDB</span
+          ><span class="mq-sep">✦</span> <span>Tailwind CSS</span
+          ><span class="mq-sep">✦</span> <span>Gemini API</span
+          ><span class="mq-sep">✦</span> <span>Ethereum</span
+          ><span class="mq-sep">✦</span> <span>Spring Boot</span
+          ><span class="mq-sep">✦</span> <span>React</span
+          ><span class="mq-sep">✦</span> <span>Node.js</span
+          ><span class="mq-sep">✦</span> <span>PostgreSQL</span
+          ><span class="mq-sep">✦</span> <span>WebSockets</span
+          ><span class="mq-sep">✦</span> <span>TypeScript</span
+          ><span class="mq-sep">✦</span> <span>MongoDB</span
+          ><span class="mq-sep">✦</span> <span>Tailwind CSS</span
+          ><span class="mq-sep">✦</span> <span>Gemini API</span
+          ><span class="mq-sep">✦</span> <span>Ethereum</span
+          ><span class="mq-sep">✦</span> <span>Spring Boot</span
+          ><span class="mq-sep">✦</span>
+        </div>
+      </div>
+
+      <!-- ╔═══════════════════════════╗
+     ║         ABOUT             ║
+     ╚═══════════════════════════╝ -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="sec-eyebrow">
+            <span class="sep-line"></span>
+            <span class="sec-tag">About me</span>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-l">
+              <h2 class="sec-title split-title">
+                Building things<br />people<em> love</em> using
+              </h2>
+
+              <p class="about-p reveal-up">
+                I'm a full-stack developer with real-world production
+                experience. During my internship at <strong>CCL</strong>, I
+                built a decentralized e-commerce platform with smart-contract
+                integrations from scratch.
+              </p>
+              <p class="about-p reveal-up">
+                My core stack is <strong>React + Node.js + PostgreSQL</strong>,
+                extended with WebSockets for real-time features, Gemini API for
+                AI, and Ethereum for Web3. I care deeply about clean
+                architecture, performance, and writing code that other
+                developers enjoy maintaining.
+              </p>
+
+              <div class="skill-cols reveal-up">
+                <div class="sk-col">
+                  <div class="sk-head">Frontend</div>
+                  <div class="sk-items">
+                    <span>React</span><span>TypeScript</span
+                    ><span>JavaScript</span> <span>Tailwind CSS</span
+                    ><span>HTML5 / CSS3</span>
+                  </div>
+                </div>
+                <div class="sk-col">
+                  <div class="sk-head">Backend</div>
+                  <div class="sk-items">
+                    <span>Node.js</span><span>Express.js</span>
+                    <span>WebSockets</span><span>REST APIs</span
+                    ><span>Spring Boot</span> <span>Java</span
+                    ><span>Apache Kafka</span>
+                  </div>
+                </div>
+                <div class="sk-col">
+                  <div class="sk-head">Data / AI / Web3</div>
+                  <div class="sk-items">
+                    <span>PostgreSQL</span><span>MongoDB</span>
+                    <span>Gemini API</span><span>Ethereum</span
+                    ><span>Smart Contracts</span>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="assets/Karan_Kumar_Resume.pdf"
+                target="_blank"
+                class="cta-primary reveal-up"
+                style="width: fit-content"
+              >
+                <span class="cta-label">Download Résumé</span>
+                <span class="cta-icon"><i class="ri-download-line"></i></span>
+              </a>
+            </div>
+
+            <div class="about-r">
+              <div class="abt-img-wrap reveal-right">
+                <img
+                  src="assets/1karan.png"
+                  alt="Karan Kumar"
+                  class="abt-img"
+                />
+                <div class="abt-img-shine"></div>
+                <div class="abt-corner tl"></div>
+                <div class="abt-corner br"></div>
+              </div>
+
+              <div class="about-stats reveal-up">
+                <div class="ast">
+                  <div class="ast-n" data-count="1" data-suffix="+">0</div>
+                  <div class="ast-l">Internship</div>
+                </div>
+                <div class="ast-sep"></div>
+                <div class="ast">
+                  <div class="ast-n" data-count="30" data-suffix="+">0</div>
+                  <div class="ast-l">Repositories</div>
+                </div>
+                <div class="ast-sep"></div>
+                <div class="ast">
+                  <div class="ast-n" data-count="4">0</div>
+                  <div class="ast-l">Projects</div>
+                </div>
+                <div class="ast-sep"></div>
+                <div class="ast">
+                  <div class="ast-n" data-count="10" data-suffix="M+">0</div>
+                  <div class="ast-l">YT Sub Reach</div>
+                </div>
+              </div>
+
+              <!-- Skills bars -->
+              <div class="bars reveal-up">
+                <div class="bar-item" data-w="88">
+                  <div class="bi-top">
+                    <span>React / JavaScript</span
+                    ><span class="bi-pct">88%</span>
+                  </div>
+                  <div class="bi-track"><div class="bi-fill"></div></div>
+                </div>
+                <div class="bar-item" data-w="80">
+                  <div class="bi-top">
+                    <span>Node.js / Express</span
+                    ><span class="bi-pct">80%</span>
+                  </div>
+                  <div class="bi-track"><div class="bi-fill"></div></div>
+                </div>
+                <div class="bar-item" data-w="72">
+                  <div class="bi-top">
+                    <span>PostgreSQL / MongoDB</span
+                    ><span class="bi-pct">72%</span>
+                  </div>
+                  <div class="bi-track"><div class="bi-fill"></div></div>
+                </div>
+                <div class="bar-item" data-w="65">
+                  <div class="bi-top">
+                    <span>TypeScript</span><span class="bi-pct">65%</span>
+                  </div>
+                  <div class="bi-track"><div class="bi-fill"></div></div>
+                </div>
+                <div class="bar-item" data-w="58">
+                  <div class="bi-top">
+                    <span>Web3 / AI Integration</span
+                    ><span class="bi-pct">58%</span>
+                  </div>
+                  <div class="bi-track"><div class="bi-fill"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ╔═══════════════════════════╗
+     ║     PROJECTS / WORK       ║
+     ╚═══════════════════════════╝ -->
+      <section id="work" class="work">
+        <div class="container">
+          <div class="sec-eyebrow">
+            <span class="sep-line"></span>
+            <span class="sec-tag">Selected work</span>
+          </div>
+          <div class="work-head">
+            <h2 class="sec-title split-title">
+              Projects I've<em> shipped</em>
+            </h2>
+            <div class="proj-filters reveal-up">
+              <button class="pf active" data-f="All">All</button>
+              <button class="pf" data-f="Full Stack">Full Stack</button>
+              <button class="pf" data-f="AI">AI</button>
+              <button class="pf" data-f="Web3">Web3</button>
+              <button class="pf" data-f="Backend">Backend</button>
+              <button class="pf" data-f="Healthcare">Healthcare</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-list" id="proj-list">
+          <article
+            class="proj-row reveal-proj"
+            data-cat="Full Stack,AI,Healthcare"
+          >
+            <div class="pr-num">01</div>
+            <div class="pr-img-col">
+              <div class="pr-img-wrap">
+                <div
+                  class="pr-img-placeholder"
+                  style="
+                    width: 100%;
+                    height: 200px;
+                    background: linear-gradient(135deg, #1e1b4b, #312e81);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 14px;
+                  "
+                >
+                  <span
+                    style="
+                      font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
+                      font-size: 2rem;
+                      font-weight: 800;
+                      color: rgba(255, 255, 255, 0.15);
+                      letter-spacing: -0.02em;
+                    "
+                    >Ami-Bridge</span
+                  >
+                </div>
+                <div class="pr-img-overlay"></div>
+              </div>
+            </div>
+            <div class="pr-info">
+              <div class="pr-tags">
+                <span>Full Stack</span><span>AI</span><span>Healthcare</span>
+              </div>
+              <h3 class="pr-name">Ami-Bridge</h3>
+              <p class="pr-sub">AI-Powered Healthcare Assistant</p>
+              <p class="pr-desc">
+                A full-stack healthcare communication platform bridging patients
+                and providers with AI-assisted interactions, real-time
+                messaging, and intelligent document processing for streamlined
+                medical workflows.
+              </p>
+              <div class="pr-foot">
+                <a
+                  href="https://github.com/KKumarPro"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="pr-link"
+                >
+                  <i class="ri-github-line"></i> Source
+                </a>
+                <span class="pr-badge">Latest</span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="proj-row reveal-proj"
+            data-cat="Full Stack,AI,WebSockets"
+          >
+            <div class="pr-num">02</div>
+            <div class="pr-img-col">
+              <div class="pr-img-wrap">
+                <img src="assets/Glimmer.png" alt="Glimmer" loading="lazy" />
+                <div class="pr-img-overlay"></div>
+              </div>
+            </div>
+            <div class="pr-info">
+              <div class="pr-tags">
+                <span>Full Stack</span><span>AI</span><span>WebSockets</span>
+              </div>
+              <h3 class="pr-name">Glimmer</h3>
+              <p class="pr-sub">Cosmic Social Platform</p>
+              <p class="pr-desc">
+                Full-stack social platform with real-time chat, ephemeral
+                messaging, 3D visualizations via Three.js, and AI-powered
+                interactions using Google Gemini API.
+              </p>
+              <div class="pr-foot">
+                <a
+                  href="https://github.com/KKumarPro/GlimmerNotes"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="pr-link"
+                >
+                  <i class="ri-github-line"></i> Source
+                </a>
+                <span class="pr-badge">Featured</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj-row reveal-proj" data-cat="Full Stack,Web3,AI">
+            <div class="pr-num">03</div>
+            <div class="pr-img-col">
+              <div class="pr-img-wrap">
+                <img src="assets/reuseIT.png" alt="reuseIT" loading="lazy" />
+                <div class="pr-img-overlay"></div>
+              </div>
+            </div>
+            <div class="pr-info">
+              <div class="pr-tags">
+                <span>Full Stack</span><span>Web3</span><span>AI</span>
+              </div>
+              <h3 class="pr-name">reuseIT</h3>
+              <p class="pr-sub">Electronics Marketplace</p>
+              <p class="pr-desc">
+                Refurbished electronics marketplace with crypto authentication,
+                AI shopping assistant, live auction system, and NFT-based reward
+                milestones.
+              </p>
+              <div class="pr-foot">
+                <a
+                  href="https://github.com/KKumarPro/reuseIT"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="pr-link"
+                >
+                  <i class="ri-github-line"></i> Source
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj-row reveal-proj" data-cat="Backend,AI">
+            <div class="pr-num">04</div>
+            <div class="pr-img-col">
+              <div class="pr-img-wrap">
+                <img
+                  src="assets/train.png"
+                  alt="AI Train Control"
+                  loading="lazy"
+                />
+                <div class="pr-img-overlay"></div>
+              </div>
+            </div>
+            <div class="pr-info">
+              <div class="pr-tags">
+                <span>Backend</span><span>AI</span><span>Java</span>
+              </div>
+              <h3 class="pr-name">AI Train Control</h3>
+              <p class="pr-sub">Traffic Scheduling System</p>
+              <p class="pr-desc">
+                AI simulation using genetic algorithms to resolve train
+                scheduling conflicts in real time, built with Java and Spring
+                Boot.
+              </p>
+              <div class="pr-foot">
+                <a
+                  href="https://github.com/KKumarPro/AI-Powered-Train-Traffic-Control"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="pr-link"
+                >
+                  <i class="ri-github-line"></i> Source
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ╔═══════════════════════════╗
+     ║       SERVICES            ║
+     ╚═══════════════════════════╝ -->
+      <section id="services" class="services">
+        <div class="container">
+          <div class="sec-eyebrow">
+            <span class="sep-line"></span>
+            <span class="sec-tag">What I do</span>
+          </div>
+          <h2 class="sec-title split-title">Services I<em> offer</em></h2>
+
+          <div class="svc-grid">
+            <div class="svc-card reveal-up">
+              <div class="svc-icon"><i class="ri-layout-masonry-line"></i></div>
+              <h3 class="svc-name">Full-Stack Development</h3>
+              <p class="svc-desc">
+                End-to-end applications with React frontends and Node.js
+                backends. Production-ready, tested, and optimised for real-world
+                usage.
+              </p>
+              <div class="svc-stack">
+                <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+              </div>
+            </div>
+            <div class="svc-card reveal-up">
+              <div class="svc-icon"><i class="ri-live-line"></i></div>
+              <h3 class="svc-name">Real-Time Systems</h3>
+              <p class="svc-desc">
+                Live chat, notifications, and collaborative features powered by
+                WebSockets. Sub-100ms latency experiences built right.
+              </p>
+              <div class="svc-stack">
+                <span>WebSockets</span><span>Socket.io</span><span>Redis</span>
+              </div>
+            </div>
+            <div class="svc-card reveal-up">
+              <div class="svc-icon"><i class="ri-sparkling-2-line"></i></div>
+              <h3 class="svc-name">AI Feature Integration</h3>
+              <p class="svc-desc">
+                Context-aware AI using Gemini API — smart search,
+                auto-responses, and intelligent UI that adds measurable value.
+              </p>
+              <div class="svc-stack">
+                <span>Gemini API</span><span>Prompt Eng.</span
+                ><span>Node.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ╔═══════════════════════════╗
+     ║      EXPERIENCE           ║
+     ╚═══════════════════════════╝ -->
+      <section id="resume" class="xp">
+        <div class="container">
+          <div class="sec-eyebrow">
+            <span class="sep-line"></span>
+            <span class="sec-tag">Experience</span>
+          </div>
+          <h2 class="sec-title split-title">Where I've<em> worked</em></h2>
+
+          <div class="tl">
+            <div class="tl-item reveal-up">
+              <div class="tl-meta">
+                <span class="tl-year">Jul–Aug 2025</span>
+                <span class="tl-co">CCL</span>
+              </div>
+              <div class="tl-node"><div class="tl-dot"></div></div>
+              <div class="tl-body">
+                <h3 class="tl-role">Web Developer Intern</h3>
+                <p class="tl-org">Central Coalfields Limited (CCL)</p>
+                <ul class="tl-pts">
+                  <li>
+                    Built a prototype decentralized e-commerce platform as an
+                    internal innovation initiative.
+                  </li>
+                  <li>
+                    Implemented smart-contract transaction logic for transparent
+                    order tracking.
+                  </li>
+                  <li>
+                    Developed React + Tailwind UI components focused on
+                    usability and performance.
+                  </li>
+                </ul>
+                <div class="tl-chips">
+                  <span>React</span><span>Tailwind</span
+                  ><span>Smart Contracts</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item reveal-up">
+              <div class="tl-meta">
+                <span class="tl-year">Dec 2024–Jan 2025</span>
+                <span class="tl-co">JPMorgan</span>
+              </div>
+              <div class="tl-node"><div class="tl-dot"></div></div>
+              <div class="tl-body">
+                <h3 class="tl-role">Software Engineering Virtual Experience</h3>
+                <p class="tl-org">JP Morgan Chase &amp; Co. · Virtual</p>
+                <ul class="tl-pts">
+                  <li>
+                    Built a Spring Boot microservice to process high-volume
+                    financial transactions using Apache Kafka, simulating
+                    real-world asynchronous event-driven systems.
+                  </li>
+                  <li>
+                    Implemented transaction validation and persistence using
+                    Spring Data JPA with H2 SQL, modelling relational user and
+                    transaction entities.
+                  </li>
+                  <li>
+                    Integrated an external REST-based Incentive API with
+                    business rules applied to recipient balances, maintaining
+                    transactional correctness.
+                  </li>
+                  <li>
+                    Tested REST endpoints via Spring MVC using JUnit, embedded
+                    Kafka, and IDE debugging tools.
+                  </li>
+                </ul>
+                <div class="tl-chips">
+                  <span>Spring Boot</span><span>Apache Kafka</span
+                  ><span>Java</span><span>JUnit</span><span>REST APIs</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item reveal-up">
+              <div class="tl-meta">
+                <span class="tl-year">2022–Present</span>
+                <span class="tl-co">Upwork</span>
+              </div>
+              <div class="tl-node"><div class="tl-dot"></div></div>
+              <div class="tl-body">
+                <h3 class="tl-role">Freelance Web Developer</h3>
+                <p class="tl-org">Upwork Platform</p>
+                <ul class="tl-pts">
+                  <li>
+                    Delivered frontend UI, website customisation, and bug fixes
+                    for global clients.
+                  </li>
+                  <li>
+                    Built responsive pages using HTML, CSS, JavaScript and React
+                    per client specs.
+                  </li>
+                  <li>
+                    Maintained direct client communication with consistent
+                    on-time delivery.
+                  </li>
+                </ul>
+                <div class="tl-chips">
+                  <span>React</span><span>JavaScript</span><span>CSS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item reveal-up">
+              <div class="tl-meta">
+                <span class="tl-year">Jul 2023–Jan 2024</span>
+                <span class="tl-co">Amazon</span>
+              </div>
+              <div class="tl-node"><div class="tl-dot"></div></div>
+              <div class="tl-body">
+                <h3 class="tl-role">Customer Support Associate</h3>
+                <p class="tl-org">Amazon</p>
+                <ul class="tl-pts">
+                  <li>
+                    Resolved high-volume customer issues with strict quality and
+                    speed benchmarks.
+                  </li>
+                  <li>
+                    Developed communication, problem-solving, and time
+                    management under pressure.
+                  </li>
+                </ul>
+                <div class="tl-chips">
+                  <span>Communication</span><span>Support</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item reveal-up">
+              <div class="tl-meta">
+                <span class="tl-year">2023–Present</span>
+                <span class="tl-co">Amity</span>
+              </div>
+              <div class="tl-node">
+                <div class="tl-dot tl-dot-active"></div>
+              </div>
+              <div class="tl-body">
+                <h3 class="tl-role">B.Tech CSE + Peer Mentor</h3>
+                <p class="tl-org">Amity University Jharkhand</p>
+                <ul class="tl-pts">
+                  <li>Pursuing B.Tech in Computer Science & Engineering.</li>
+                  <li>
+                    Peer mentor — guided juniors in programming, debugging, and
+                    project planning.
+                  </li>
+                  <li>
+                    Designed visual assets for university technical and cultural
+                    events.
+                  </li>
+                </ul>
+                <div class="tl-chips">
+                  <span>CSE</span><span>Mentoring</span><span>Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ╔═══════════════════════════╗
+     ║      TESTIMONIALS         ║
+     ╚═══════════════════════════╝ -->
+      <section id="testimonials" class="testi">
+        <div class="container">
+          <div class="sec-eyebrow">
+            <span class="sep-line"></span>
+            <span class="sec-tag">Testimonials</span>
+          </div>
+          <h2 class="sec-title split-title">What people<em> say</em></h2>
+          <div class="ts-grid">
+            <div class="ts-card reveal-up">
+              <div class="ts-q">"</div>
+              <p class="ts-text">
+                Karan demonstrated strong problem-solving skills and
+                adaptability while working on full-stack features. He understood
+                requirements quickly and collaborated effectively with the team.
+              </p>
+              <div class="ts-author">
+                <img src="assets/avatar-4.svg" alt="" class="ts-av" />
+                <div>
+                  <div class="ts-name">Technical Mentor</div>
+                  <div class="ts-role">Central Coalfields Limited</div>
+                </div>
+              </div>
+            </div>
+            <div class="ts-card reveal-up">
+              <div class="ts-q">"</div>
+              <p class="ts-text">
+                Karan was proactive in helping teammates, explaining concepts
+                clearly, and supporting debugging efforts. A reliable
+                collaborator you can count on.
+              </p>
+              <div class="ts-author">
+                <img src="assets/avatar-3.svg" alt="" class="ts-av" />
+                <div>
+                  <div class="ts-name">Project Team</div>
+                  <div class="ts-role">Amity University Jharkhand</div>
+                </div>
+              </div>
+            </div>
+            <div class="ts-card reveal-up">
+              <div class="ts-q">"</div>
+              <p class="ts-text">
+                Clear communication, timely delivery, and iterative improvements
+                based on feedback made working with Karan smooth and reliable
+                every single time.
+              </p>
+              <div class="ts-author">
+                <img src="assets/avatar-4.svg" alt="" class="ts-av" />
+                <div>
+                  <div class="ts-name">Client</div>
+                  <div class="ts-role">Upwork Freelance</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ╔═══════════════════════════╗
+     ║        CERTIFICATIONS     ║
+     ╚═══════════════════════════╝ -->
+      <section id="certifications" class="certs">
+        <div class="container">
+          <div class="sec-eyebrow">
+            <span class="sep-line"></span>
+            <span class="sec-tag">Certifications</span>
+          </div>
+          <h2 class="sec-title split-title">What I've<em> earned</em></h2>
+
+          <div class="cert-grid">
+            <div class="cert-card reveal-up">
+              <div class="cert-logo"><i class="ri-robot-2-line"></i></div>
+              <div class="cert-body">
+                <h3 class="cert-name">AI Practitioner &amp; Data Analytics</h3>
+                <p class="cert-issuer">Infosys Springboard</p>
+                <span class="cert-date">Jun 2025</span>
+              </div>
+              <div class="cert-badge">Verified</div>
+            </div>
+
+            <div class="cert-card reveal-up">
+              <div class="cert-logo">
+                <i class="ri-shield-keyhole-line"></i>
+              </div>
+              <div class="cert-body">
+                <h3 class="cert-name">
+                  Cyber Security &amp; Technology Consulting
+                </h3>
+                <p class="cert-issuer">Deloitte</p>
+                <span class="cert-date">Dec 2025</span>
+              </div>
+              <div class="cert-badge">Verified</div>
+            </div>
+
+            <div class="cert-card reveal-up">
+              <div class="cert-logo"><i class="ri-database-2-line"></i></div>
+              <div class="cert-body">
+                <h3 class="cert-name">Database Fundamentals</h3>
+                <p class="cert-issuer">Infosys Springboard</p>
+                <span class="cert-date">Sep 2023</span>
+              </div>
+              <div class="cert-badge">Verified</div>
+            </div>
+
+            <div class="cert-card reveal-up">
+              <div class="cert-logo"><i class="ri-sparkling-2-line"></i></div>
+              <div class="cert-body">
+                <h3 class="cert-name">
+                  Generative AI &amp; Prompt Engineering
+                </h3>
+                <p class="cert-issuer">Infosys Springboard</p>
+                <span class="cert-date">Jun 2025</span>
+              </div>
+              <div class="cert-badge">Verified</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ╔═══════════════════════════╗
+     ║        CONTACT            ║
+     ╚═══════════════════════════╝ -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="sec-eyebrow">
+            <span class="sep-line"></span>
+            <span class="sec-tag">Get in touch</span>
+          </div>
+
+          <div class="ct-grid">
+            <div class="ct-l">
+              <h2 class="ct-headline split-title">
+                Let's build<br /><em>something great</em>
+              </h2>
+              <p class="ct-sub reveal-up">
+                Open to full-time roles, freelance projects, and interesting
+                collaborations. I'll respond within 24 hours.
+              </p>
+
+              <div class="ct-links reveal-up">
+                <a
+                  href="https://github.com/KKumarPro"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="ct-link-row"
+                >
+                  <div class="clr-icon"><i class="ri-github-line"></i></div>
+                  <div class="clr-text">
+                    <span>GitHub</span><em>KKumarPro</em>
+                  </div>
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/karan-kumar-305925282/"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="ct-link-row"
+                >
+                  <div class="clr-icon"><i class="ri-linkedin-line"></i></div>
+                  <div class="clr-text">
+                    <span>LinkedIn</span><em>Karan Kumar</em>
+                  </div>
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a
+                  href="assets/Karan_Kumar_Resume.pdf"
+                  target="_blank"
+                  class="ct-link-row"
+                >
+                  <div class="clr-icon"><i class="ri-file-pdf-line"></i></div>
+                  <div class="clr-text">
+                    <span>Résumé</span><em>Download PDF</em>
+                  </div>
+                  <i class="ri-download-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="ct-r reveal-up">
+              <form
+                id="contact-form"
+                action="https://formsubmit.co/amityrnc11@gmail.com"
+                method="POST"
+                class="ct-form"
+              >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Portfolio Contact — Karan Kumar"
+                />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input
+                  type="text"
+                  name="_honey"
+                  style="display: none"
+                  tabindex="-1"
+                />
+
+                <div class="cf-row">
+                  <div class="cf-field">
+                    <input
+                      type="text"
+                      name="name"
+                      class="cf-in"
+                      placeholder=" "
+                      required
+                    />
+                    <label class="cf-lbl">Your Name</label>
+                  </div>
+                  <div class="cf-field">
+                    <input
+                      type="email"
+                      name="email"
+                      class="cf-in"
+                      placeholder=" "
+                      required
+                    />
+                    <label class="cf-lbl">Email Address</label>
+                  </div>
+                </div>
+                <div class="cf-field">
+                  <input
+                    type="text"
+                    name="subject"
+                    class="cf-in"
+                    placeholder=" "
+                    required
+                  />
+                  <label class="cf-lbl">Subject</label>
+                </div>
+                <div class="cf-field">
+                  <textarea
+                    name="message"
+                    class="cf-in cf-ta"
+                    placeholder=" "
+                    required
+                  ></textarea>
+                  <label class="cf-lbl">Your Message</label>
+                </div>
+                <button type="submit" class="cta-primary cf-submit" id="cf-btn">
+                  <span class="cta-label">Send Message</span>
+                  <span class="cta-icon"
+                    ><i class="ri-send-plane-line"></i
+                  ></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ╔═══════════════════════════╗
+     ║         FOOTER            ║
+     ╚═══════════════════════════╝ -->
+      <footer class="footer">
+        <div class="container">
+          <div class="ft-inner">
+            <div class="ft-l">
+              <span class="ft-logo">KK<em>.</em></span>
+              <p>Designed & built by Karan Kumar · 2025</p>
+            </div>
+            <div class="ft-c">
+              <a href="#home" class="ft-nav">Home</a>
+              <a href="#work" class="ft-nav">Work</a>
+              <a href="#contact" class="ft-nav">Contact</a>
+            </div>
+            <div class="ft-r">
+              <a
+                href="https://github.com/KKumarPro"
+                target="_blank"
+                rel="noreferrer"
+                class="ft-soc"
+                ><i class="ri-github-line"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/karan-kumar-305925282/"
+                target="_blank"
+                rel="noreferrer"
+                class="ft-soc"
+                ><i class="ri-linkedin-line"></i
+              ></a>
+              <button class="ft-soc" id="scroll-top" aria-label="Back to top">
+                <i class="ri-arrow-up-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- TOAST -->
+    <div id="toast"></div>
+
+    <!-- GSAP + ScrollTrigger (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
