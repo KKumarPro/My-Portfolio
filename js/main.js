@@ -14,22 +14,9 @@ const clamp = (v,lo,hi) => Math.min(Math.max(v,lo),hi);
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 /* ══════════════════════════════════════════
-   1. THEME
+   1. (single fixed palette — no theme toggle)
 ══════════════════════════════════════════ */
 const html = document.documentElement;
-const themeBtn  = $('#theme-btn');
-const themeIcon = $('#theme-icon');
-
-const applyTheme = t => {
-  html.setAttribute('data-theme', t);
-  themeIcon.className = t === 'dark' ? 'ri-moon-line' : 'ri-sun-line';
-  localStorage.setItem('kk-theme', t);
-};
-applyTheme(localStorage.getItem('kk-theme') || 'dark');
-
-themeBtn.addEventListener('click', () => {
-  applyTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
-});
 
 /* ════════════════════════════════════════════
    2. PRELOADER — animated counter
