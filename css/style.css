@@ -427,12 +427,13 @@ section {
   left: 4%;
 }
 .orb-2 {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   background: var(--coral);
   border: var(--bw-lg) solid var(--ink);
-  bottom: 12%;
-  left: 12%;
+  bottom: auto;
+  top: 4%;
+  left: 44%;
   border-radius: 22% 78% 65% 35% / 45% 30% 70% 55%;
 }
 .orb-3 {
@@ -493,6 +494,9 @@ section {
 }
 .h-headline em {
   color: var(--coral);
+  -webkit-text-stroke: 1.5px var(--ink);
+  paint-order: stroke fill;
+  text-shadow: 4px 4px 0 var(--ink);
 }
 
 .h-sub {
@@ -515,12 +519,16 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  color: var(--cobalt);
+  color: var(--ink);
+  background: rgba(44, 60, 240, 0.16);
   font-family: var(--f-serif);
   font-style: italic;
-  font-weight: 600;
+  font-weight: 700;
+  padding: 0 6px;
+  border-bottom: 3px solid var(--cobalt);
   transform: translateY(120%);
   transition: transform 0.55s cubic-bezier(0.7, 0, 0.2, 1);
+  white-space: nowrap;
 }
 .hw.active {
   transform: translateY(0);
@@ -712,8 +720,8 @@ section {
   color: var(--cobalt);
 }
 .fp-2 {
-  top: 34%;
-  left: -12%;
+  top: 40%;
+  left: -3%;
   color: var(--coral);
 }
 .fp-3 {
