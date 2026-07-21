@@ -576,3 +576,38 @@ console.log('%c KK %c Karan Kumar Portfolio %c GSAP · Vanilla JS ',
   'background:#6366F1;color:#fff;padding:3px 8px;border-radius:3px 0 0 3px;font-weight:700',
   'background:#18181C;color:#eee;padding:3px 10px',
   'background:#A78BFA;color:#fff;padding:3px 8px;border-radius:0 3px 3px 0');
+
+/* ══════════════════════════════════════════
+   19. CERTIFICATIONS — VIEW MORE
+══════════════════════════════════════════ */
+(() => {
+  const grid = $('#cert-grid');
+  const btn  = $('#cert-more-btn');
+  if (!grid || !btn) return;
+
+  let expanded = false;
+
+  btn.addEventListener('click', () => {
+    expanded = !expanded;
+    grid.classList.toggle('expanded', expanded);
+    btn.classList.toggle('expanded', expanded);
+    btn.querySelector('span').textContent = expanded
+      ? 'Show Fewer Certificates'
+      : 'View More Certificates';
+
+    if (expanded) {
+      const extras = $$('.cert-extra', grid);
+      extras.forEach((el, i) => {
+        el.classList.remove('shown');
+        // restart the fade-in animation with a small stagger
+        requestAnimationFrame(() => {
+          el.style.animationDelay = `${i * 0.06}s`;
+          el.classList.add('shown');
+        });
+      });
+    } else {
+      // scroll back up to the section heading so the collapse doesn't strand the user
+      grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+})();
