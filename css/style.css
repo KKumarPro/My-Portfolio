@@ -399,9 +399,10 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: var(--paper);
+  background: var(--violet);
+  color: var(--paper);
   background-image:
-    radial-gradient(circle, var(--ink-soft) 1px, transparent 1.4px);
+    radial-gradient(circle, rgba(255, 255, 255, 0.12) 1px, transparent 1.4px);
   background-size: 26px 26px;
   background-position: -10px -10px;
   overflow: hidden;
@@ -419,28 +420,21 @@ section {
   opacity: 0.9;
 }
 .orb-1 {
-  width: 220px;
-  height: 220px;
+  width: 130px;
+  height: 130px;
   background: var(--lime);
   border: var(--bw-lg) solid var(--ink);
-  top: 8%;
-  left: 4%;
+  top: -50px;
+  left: -50px;
 }
 .orb-2 {
-  width: 120px;
-  height: 120px;
-  background: var(--coral);
-  border: var(--bw-lg) solid var(--ink);
-  bottom: auto;
-  top: 4%;
-  left: 44%;
-  border-radius: 22% 78% 65% 35% / 45% 30% 70% 55%;
+  display: none;
 }
 .orb-3 {
   width: 90px;
   height: 90px;
   background: var(--cobalt);
-  border: var(--bw-lg) solid var(--ink);
+  border: var(--bw-lg) solid var(--paper);
   top: 20%;
   right: 6%;
   transform: rotate(20deg);
@@ -471,7 +465,7 @@ section {
   padding: 8px 14px;
   background: var(--white);
   border: var(--bw) solid var(--ink);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 4px 4px 0 0 var(--lime);
   margin-bottom: 26px;
 }
 .sp-dot {
@@ -493,10 +487,8 @@ section {
   overflow: hidden;
 }
 .h-headline em {
-  color: var(--coral);
-  -webkit-text-stroke: 1.5px var(--ink);
-  paint-order: stroke fill;
-  text-shadow: 4px 4px 0 var(--ink);
+  color: var(--lime);
+  text-shadow: 4px 4px 0 var(--coral);
 }
 
 .h-sub {
@@ -519,13 +511,13 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  color: var(--ink);
-  background: rgba(44, 60, 240, 0.16);
+  color: var(--coral);
+  background: rgba(255, 255, 255, 0.06);
   font-family: var(--f-serif);
   font-style: italic;
   font-weight: 700;
   padding: 0 6px;
-  border-bottom: 3px solid var(--cobalt);
+  border-bottom: 3px solid var(--lime);
   transform: translateY(120%);
   transition: transform 0.55s cubic-bezier(0.7, 0, 0.2, 1);
   white-space: nowrap;
@@ -540,7 +532,7 @@ section {
 .h-desc {
   max-width: 46ch;
   font-size: 1.05rem;
-  color: var(--ink-soft);
+  color: #cfc9b6;
   margin-bottom: 34px;
 }
 .h-desc strong {
@@ -564,11 +556,11 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-weight: 500;
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--lime);
+  color: var(--ink);
   border: var(--bw) solid var(--ink);
   padding: 15px 22px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 5px 5px 0 0 var(--coral);
 }
 .cta-icon {
   display: inline-flex;
@@ -576,8 +568,8 @@ section {
   height: 22px;
   align-items: center;
   justify-content: center;
-  background: var(--lime);
-  color: var(--ink);
+  background: var(--ink);
+  color: var(--lime);
   border-radius: 50%;
 }
 .cta-ghost {
@@ -588,8 +580,9 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   padding: 15px 22px;
-  border: var(--bw) solid var(--ink);
-  background: var(--paper-3);
+  border: var(--bw) solid var(--paper);
+  background: transparent;
+  color: var(--paper);
 }
 
 .h-socials {
@@ -606,19 +599,21 @@ section {
   justify-content: center;
   border: var(--bw) solid var(--ink);
   background: var(--white);
+  color: var(--ink);
   font-size: 1.1rem;
 }
 .soc-div {
   width: var(--bw);
   height: 24px;
-  background: var(--ink);
+  background: var(--paper);
+  opacity: 0.4;
 }
 .soc-loc {
   font-family: var(--f-mono);
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--ink-soft);
+  color: #cfc9b6;
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -630,9 +625,9 @@ section {
 }
 .hv-frame {
   position: relative;
-  border: var(--bw-lg) solid var(--ink);
-  background: var(--violet);
-  box-shadow: var(--shadow-lg);
+  border: var(--bw-lg) solid var(--paper);
+  background: var(--cobalt);
+  box-shadow: 12px 12px 0 0 var(--coral);
   padding: 14px;
   aspect-ratio: 4/5;
 }
@@ -660,7 +655,7 @@ section {
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 4px 4px 0 0 var(--ink);
 }
 .hv-b-dot {
   width: 7px;
@@ -680,7 +675,7 @@ section {
   background: var(--white);
   padding: 8px;
   transform: rotate(9deg);
-  box-shadow: var(--shadow);
+  box-shadow: 7px 7px 0 0 var(--coral);
   z-index: 3;
 }
 .hv-sticker img {
@@ -711,7 +706,7 @@ section {
   font-family: var(--f-mono);
   font-size: 0.76rem;
   font-weight: 500;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 4px 4px 0 0 var(--lime);
   z-index: 2;
 }
 .fp-1 {
@@ -734,6 +729,7 @@ section {
   left: 30%;
   color: var(--ink);
   background: var(--lime);
+  box-shadow: 4px 4px 0 0 var(--coral);
 }
 
 .scroll-ind {
@@ -748,8 +744,8 @@ section {
 .si-track {
   width: 34px;
   height: 6px;
-  border: 1.5px solid var(--ink);
-  background: var(--white);
+  border: 1.5px solid var(--paper);
+  background: transparent;
 }
 .si-thumb {
   width: 40%;
