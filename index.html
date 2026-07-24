@@ -93,9 +93,9 @@
     </div>
 
     <main id="main">
-      <!--  ╔══════════════════════════╗
-            ║         HERO             ║
-            ╚══════════════════════════╝ -->
+      <!-- ╔═══════════════════════════╗
+     ║         HERO             ║
+     ╚═══════════════════════════╝ -->
       <section id="home" class="hero">
         <!-- canvas-like bg orbs -->
         <div class="hero-orbs" aria-hidden="true">
@@ -234,9 +234,9 @@
         </div>
       </section>
 
-      <!--  ╔══════════════════════════╗
-            ║    MARQUEE STRIP         ║
-            ╚══════════════════════════╝ -->
+      <!-- ╔═══════════════════════════╗
+     ║    MARQUEE STRIP          ║
+     ╚═══════════════════════════╝ -->
       <div class="mq-strip" aria-hidden="true">
         <div class="mq-inner">
           <span>React</span><span class="mq-sep">✦</span> <span>Node.js</span
@@ -438,15 +438,21 @@
           >
             <div class="pr-num">01</div>
             <div class="pr-img-col">
-              <div class="pr-img-wrap">
-                <img src="assets/ami-bridge.png" alt="AMI Bridge" loading="lazy" />
+              <a
+                class="pr-img-wrap pr-img-link"
+                href="https://ami-bridge-live.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="View Ami-Bridge live demo"
+              >
                 <div class="pr-img-patch">
                   <span class="patch-word">AMI</span>
                   <span class="patch-word patch-word-2">BRIDGE</span>
                   <span class="patch-stamp">Preview soon</span>
                 </div>
                 <div class="pr-img-overlay"></div>
-              </div>
+                <span class="pr-live-badge"><i class="ri-external-link-line"></i> View Live</span>
+              </a>
             </div>
             <div class="pr-info">
               <div class="pr-tags">
@@ -480,10 +486,16 @@
           >
             <div class="pr-num">02</div>
             <div class="pr-img-col">
-              <div class="pr-img-wrap">
+              <!-- TODO: replace href="#" with the live demo link when ready -->
+              <a
+                class="pr-img-wrap pr-img-link pr-img-pending"
+                href="#"
+                aria-label="Glimmer live demo coming soon"
+              >
                 <img src="assets/Glimmer.png" alt="Glimmer" loading="lazy" />
                 <div class="pr-img-overlay"></div>
-              </div>
+                <span class="pr-live-badge pending"><i class="ri-time-line"></i> Demo Soon</span>
+              </a>
             </div>
             <div class="pr-info">
               <div class="pr-tags">
@@ -513,10 +525,16 @@
           <article class="proj-row reveal-proj" data-cat="Full Stack,Web3,AI">
             <div class="pr-num">03</div>
             <div class="pr-img-col">
-              <div class="pr-img-wrap">
+              <!-- TODO: replace href="#" with the live demo link when ready -->
+              <a
+                class="pr-img-wrap pr-img-link pr-img-pending"
+                href="#"
+                aria-label="reuseIT live demo coming soon"
+              >
                 <img src="assets/reuseIT.png" alt="reuseIT" loading="lazy" />
                 <div class="pr-img-overlay"></div>
-              </div>
+                <span class="pr-live-badge pending"><i class="ri-time-line"></i> Demo Soon</span>
+              </a>
             </div>
             <div class="pr-info">
               <div class="pr-tags">
@@ -545,14 +563,20 @@
           <article class="proj-row reveal-proj" data-cat="Backend,AI">
             <div class="pr-num">04</div>
             <div class="pr-img-col">
-              <div class="pr-img-wrap">
+              <!-- TODO: replace href="#" with the live demo link when ready -->
+              <a
+                class="pr-img-wrap pr-img-link pr-img-pending"
+                href="#"
+                aria-label="AI Train Control live demo coming soon"
+              >
                 <img
                   src="assets/train.png"
                   alt="AI Train Control"
                   loading="lazy"
                 />
                 <div class="pr-img-overlay"></div>
-              </div>
+                <span class="pr-live-badge pending"><i class="ri-time-line"></i> Demo Soon</span>
+              </a>
             </div>
             <div class="pr-info">
               <div class="pr-tags">

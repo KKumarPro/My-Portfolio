@@ -1013,6 +1013,7 @@ section {
 }
 .pr-img-wrap {
   position: relative;
+  display: block;
   border: var(--bw-lg) solid var(--ink);
   box-shadow: var(--shadow);
   aspect-ratio: 16/11;
@@ -1030,7 +1031,38 @@ section {
   object-fit: cover;
 }
 .pr-img-overlay {
-  display: none;
+  position: absolute;
+  inset: 0;
+  background: rgba(21, 19, 14, 0.78);
+  opacity: 0;
+  transition: opacity 0.25s;
+  z-index: 1;
+}
+.pr-img-link:hover .pr-img-overlay {
+  opacity: 1;
+}
+.pr-live-badge {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--paper);
+  font-family: var(--f-mono);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0;
+  transition: opacity 0.25s;
+  pointer-events: none;
+}
+.pr-img-link:hover .pr-live-badge {
+  opacity: 1;
+}
+.pr-live-badge.pending {
+  color: var(--lime);
 }
 
 /* Ami-Bridge placeholder patch */

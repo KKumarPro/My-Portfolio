@@ -611,3 +611,15 @@ console.log('%c KK %c Karan Kumar Portfolio %c GSAP · Vanilla JS ',
     }
   });
 })();
+
+/* ══════════════════════════════════════════
+   20. PROJECT LIVE-DEMO LINKS (pending state)
+══════════════════════════════════════════ */
+$$('.pr-img-pending').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    if (typeof showToast === 'function') {
+      showToast('Live demo coming soon — check back shortly!', 'ok');
+    }
+  });
+});
